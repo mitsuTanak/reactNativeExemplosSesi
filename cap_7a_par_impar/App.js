@@ -1,22 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
 
-import OlaMundo from './components/olaMundo';
+import ChecarNumero from "./components/ChecarNumero";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <OlaMundo nome="Leitor"/>
-      <StatusBar style="auto" />
-    </View>
-  );
+export default class App extends React.Component{
+  render() {
+    return(
+      <ChecarNumero numero={10} />
+    )
+  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

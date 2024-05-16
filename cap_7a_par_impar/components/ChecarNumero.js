@@ -8,8 +8,8 @@ export default props => {
         <View style={Estilos.container}>
             {
                 props.numero % 2 == 0
-                ? <Text>O Numero é Par!</Text>
-                : <Text>O Numero é Impar!</Text>
+                ? <Text style={Estilos.texto}>O Numero é Par!</Text>
+                : <Text style={Estilos.texto}>O Numero é Impar!</Text>
             }
         </View>
     )
