@@ -7,7 +7,7 @@ import OlaMundo from './components/olaMundo';
 export default function App() {
   return (
     <View style={styles.container}>
-      <OlaMundo nome="Leitor"/>
+      <OlaMundo nome='Leitor'/>
       <StatusBar style="auto" />
     </View>
   );
