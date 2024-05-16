@@ -1,11 +1,12 @@
 import React from "react";
+import { StyleSheet, Text, View } from 'react-native'
 
-import ChecarNumero from "./components/ChecarNumero";
+import UsuarioGithub from "./components/UsuarioGithub";
 
-export default class App extends React.Component{
-  render() {
-    return(
-      <ChecarNumero numero={2} />
-    )
-  }
+export default function App() {
+  
+  return(
+    <UsuarioGithub />
+  )
+  
 }
