@@ -30,13 +30,17 @@ class UsuarioGithub extends React.Component {
             <View style={estilos.container}>
                 <Text>{JSON.stringify(this.state.dados)}</Text>
                 <View>
-                    <TextInput />
+                    <TextInput
+                        onChangeText={ usuario => {this.setState({usuario})}
+                    }value={this.state.usuario}>
+                    </TextInput>
                 </View>
                 <View>
                     <Button
                         onPress={this.fetchDados}
-                        title='Buscar Dados'
-                        accessibilityLabel='Busque os dados dos usuarios no GitHub'
+                        title="Buscar Dados"
+                        accessibilityLabel="Busque os dados do usuário no Git
+                        Hub"
                     />
                 </View>
             </View>
@@ -46,11 +50,11 @@ class UsuarioGithub extends React.Component {
 
 const estilos = StyleSheet.create({
     container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
     }
 });
 
-export default UsuarioGithub
+export default UsuarioGithub;
