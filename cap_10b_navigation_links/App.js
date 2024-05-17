@@ -1,10 +1,10 @@
 import React from 'react';
-import Evento from './components/Evento';
-import UsuarioGithub from './components/UsuarioGithub';
+import { Button, View, StyleSheet } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
-import { View } from 'react-native-reanimated/lib/typescript/Animated';
-import { Button } from 'react-native';
+
+import Evento from './components/Evento';
+import UsuarioGithub from './components/UsuarioGithub';
 
 const Drawer = createDrawerNavigator();
 
@@ -13,7 +13,11 @@ export default function App() {
     <View style={Estilos.container}>
       <Button 
         title='Evento'
-        onPress={() =>}
+        onPress={() => Navigation.navigate('Evento')} 
+      />
+      <Button 
+        title='Usúario GitHub'
+        onPress={() => Navigation.navigate('Github')} 
       />
     </View>
   );
