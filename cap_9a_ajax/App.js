@@ -1,12 +1,12 @@
 import React from "react";
 import { StyleSheet, Text, View } from 'react-native'
 
-import Evento from "./components/Evento";
+import UsuarioGithub from "./components/UsuarioGithub";
 
-export default class App extends React.Component{
-  render() {
-    return(
-      <Evento />
-    )
-  }
+export default function App() {
+  
+  return(
+    <UsuarioGithub />
+  )
+  
 }
