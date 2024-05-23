@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, TouchableHighlight, StyleSheet, TextInput, Alert } from "react-native";
-import { db } from '../config/config'
+import { db } from '../config/config';
 
 
 class AdicionarItens extends React.Component {
